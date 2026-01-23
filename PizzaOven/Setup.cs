@@ -33,7 +33,7 @@ namespace PizzaOven
                 var key = Registry.LocalMachine.OpenSubKey($@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 2231450");
                 if (key != null)
                     if (!String.IsNullOrEmpty(key.GetValue("InstallLocation") as string))
-                        defaultPath = $"{key.GetValue("InstallLocation") as string}{Global.s}PizzaTower.exe";
+                        defaultPath = $"{key.GetValue("InstallLocation") as string}{Global.s}internship (1).exe";
             }
             catch (Exception e)
             {
@@ -43,17 +43,17 @@ namespace PizzaOven
                 Global.logger.WriteLine($"Couldn't find install path in registry, select path to exe instead", LoggerType.Warning);
                 OpenFileDialog dialog = new OpenFileDialog();
                 dialog.DefaultExt = ".exe";
-                dialog.Filter = $"Executable File (PizzaTower.exe)|PizzaTower.exe";
-                dialog.Title = $"Select PizzaTower.exe from your Steam Install folder";
+                dialog.Filter = $"Executable File (internship (1).exe)|internship (1).exe";
+                dialog.Title = $"Select internship (1).exe from your game Install folder";
                 dialog.Multiselect = false;
                 dialog.InitialDirectory = Global.assemblyLocation;
                 dialog.ShowDialog();
                 if (!String.IsNullOrEmpty(dialog.FileName)
-                    && Path.GetFileName(dialog.FileName).Equals("PizzaTower.exe", StringComparison.InvariantCultureIgnoreCase))
+                    && Path.GetFileName(dialog.FileName).Equals("internship (1).exe", StringComparison.InvariantCultureIgnoreCase))
                     defaultPath = dialog.FileName;
                 else if (!String.IsNullOrEmpty(dialog.FileName))
                 {
-                    Global.logger.WriteLine($"PizzaTower.exe not found", LoggerType.Error);
+                    Global.logger.WriteLine($"internship (1).exe not found", LoggerType.Error);
                     return false;
                 }
                 else
@@ -62,7 +62,7 @@ namespace PizzaOven
             Global.config.ModsFolder = Path.GetDirectoryName(defaultPath);
             Global.config.Launcher = defaultPath;
             Global.UpdateConfig();
-            Global.logger.WriteLine($"Setup completed for Pizza Tower!", LoggerType.Info);
+            Global.logger.WriteLine($"Setup completed for internship!", LoggerType.Info);
             return true;
         }
     }

@@ -6,7 +6,7 @@ Pizza Oven is a tool that allows gamers to download, install, and manage mods fo
 When you first open the exe, you'll get a message saying to install .NET 7 Desktop Runtime if you don't already have it installed. Please do so if that's the case.
 
 ### Setup
-After the exe actually launches, Pizza Oven will automatically try to locate the game directory. If it fails to find it, it will prompt you to manually select your PizzaTower.exe. Setup will then be done just like that! If you for some reason need to setup again, just click the Setup button again.
+After the exe actually launches, Pizza Oven will automatically try to locate the game directory. If it fails to find it, it will prompt you to manually select your internship.exe. Setup will then be done just like that! If you for some reason need to setup again, just click the Setup button again.
 
 ## Features
 ### Installing Mods

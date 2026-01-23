@@ -120,11 +120,11 @@ namespace PizzaOven
             }
             // Different starting endpoint if requesting all mods instead of specific category
             if (search != null)
-                url += $"ByName?_sName=*{search}*&_idGameRow=7692&";
+                url += $"ByName?_sName=*{search}*&_idGameRow=18626&";
             else if (category.ID != null)
                 url += "ByCategory?";
             else
-                url += $"ByGame?_aGameRowIds[]=7692&";
+                url += $"ByGame?_aGameRowIds[]=18626&";
             // Consistent args
             url += $"_csvProperties=_sName,_sModelName,_sProfileUrl,_aSubmitter,_tsDateUpdated,_tsDateAdded,_aPreviewMedia,_sText,_sDescription,_aCategory,_aRootCategory,_aGame,_nViewCount," +
                 $"_nLikeCount,_nDownloadCount,_aFiles,_aModManagerIntegrations,_bIsNsfw,_aAlternateFileSources&_nPerpage={perPage}";

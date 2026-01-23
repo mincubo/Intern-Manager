@@ -300,7 +300,7 @@ namespace PizzaOven
         }
         private void GameBanana_Click(object sender, RoutedEventArgs e)
         {
-            var id = "7692";
+            var id = "18626";
             try
             {
                 var ps = new ProcessStartInfo($"https://gamebanana.com/games/{id}")
@@ -951,7 +951,7 @@ namespace PizzaOven
             {
                 ErrorPanel.Visibility = Visibility.Collapsed;
                 // Initialize categories and games
-                var gameID = "7692";
+                var gameID = "18626";
                 var types = new string[] { "Mod", "Wip", "Sound" };
                 double totalPages = 0;
                 var counter = 0;

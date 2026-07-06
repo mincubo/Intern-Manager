@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System.Windows;
 
-namespace PizzaOven
+namespace Intern Manager
 {
     public static class Setup
     {

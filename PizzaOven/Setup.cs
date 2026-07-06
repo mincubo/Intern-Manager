@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System.Windows;
 
-namespace Intern Manager
+namespace InternManager
 {
     public static class Setup
     {
